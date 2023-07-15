@@ -1,5 +1,6 @@
 f = open("bhavin.txt", "r")
 # print(f.read())
+# print(f.read(10))  # reads the 10 character
 
 '''
 content = f.read(6)
@@ -30,7 +31,7 @@ so above if u call f.read() different times passing the same parameter the outpu
 
 
 # writing in file
-file = open("demo.txt", "w")
+# file = open("demo.txt", "w")
 # file.write("hi i am piro programmer")
 # print(file)
 
@@ -39,8 +40,8 @@ file = open("demo.txt", "w")
 # appendfile.write("my name is bhavin\n")
 
 # reading and writing
-rwfile = open("bhavin.txt", "r+")
-print(rwfile.read())
-rwfile.write("thank u")
+# rwfile = open("bhavin.txt", "r+")
+# print(rwfile.read())
+# rwfile.write("thank u")
 
 f.close()
