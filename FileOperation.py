@@ -1,6 +1,14 @@
 f = open("bhavin.txt", "r")
 # print(f.read())
 # print(f.read(10))  # reads the 10 character
+# print(f.tell())  # current position of the
+# print(f.seek(20))  # change the current value of curser
+# content = f.read()  # in order to print all the characters
+# for i in content:
+#     print(i)
+# print(f.readline())  # first line will be read
+# print(f.readlines())  # return a list of lines from the current position of curser
+
 
 '''
 content = f.read(6)
@@ -40,8 +48,9 @@ so above if u call f.read() different times passing the same parameter the outpu
 # appendfile.write("my name is bhavin\n")
 
 # reading and writing
-# rwfile = open("bhavin.txt", "r+")
-# print(rwfile.read())
-# rwfile.write("thank u")
+rwfile = open("bhavin.txt", "r+")  # r+ mode writes and appends it
+print(rwfile.read())
+rwfile.write("thank u\n")
+print(rwfile.read())
 
 f.close()
