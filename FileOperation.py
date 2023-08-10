@@ -44,13 +44,23 @@ so above if u call f.read() different times passing the same parameter the outpu
 # print(file)
 
 # adding content in file
-# appendfile = open("demo.txt", "a")
+# appendfile = open("demo.txt", "a+")
 # appendfile.write("my name is bhavin\n")
+
 
 # reading and writing
 rwfile = open("bhavin.txt", "r+")  # r+ mode writes and appends it
-print(rwfile.read())
-rwfile.write("thank u\n")
-print(rwfile.read())
+# print(rwfile.read())
+# rwfile.write("thank u\n")
+# print(rwfile.read())
+
+#  copy
+file = open("bhavin.txt", "r")
+data = file.read()
+file.close()
+
+with open("demo.txt", "a") as file:
+    file.write(data)
+print("copied")
 
 f.close()
