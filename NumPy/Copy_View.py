@@ -1,13 +1,13 @@
 import numpy as np
 
 arr = np.array([1, 5, 7, 9, 8, 6, 4])
-x = arr.copy()
+x = arr.copy()  # copy is the temporary change, it does not change original array
 # print(x)
 x[4] = 10
 # print(x)
 # print(arr)
 
-y = arr.view()
+y = arr.view()  # view make changes in original array
 # print(y)
 y[4] = 2
 # print(y)
