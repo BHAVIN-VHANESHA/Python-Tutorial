@@ -18,7 +18,7 @@ ver = np.vstack([arr1, arr2, arr1, arr2])
 # print(ver)
 
 # dstack: stacking along the height
-# "NOTE: both array should be same and the number of elements in rows and columns should be same"
+# "NOTE: both array should be same in terms of number of elements in rows and columns should be same"
 height = np.dstack((arr1, arr2))
 # print(height)  # all the elements of arr1 will be in 1 column and arr2 in 2 column
 
@@ -41,8 +41,8 @@ a = np.array([2, 5, 9, 6, 3, 7])
 # print(np.all(a % 2 == 0))
 
 
-# " arange() " it will array of the given range
+# " arange() " it will return array of the given range
 a1 = np.arange(10)
-# print(a)
+# print(a1)
 # print(np.reshape(a1, [2, 5]))  # you can create a matrix according to the number of elements
 print(np.resize(a1, (3, 7)))  # free to create any dimension array
