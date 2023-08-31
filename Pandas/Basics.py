@@ -21,33 +21,33 @@ s = pd.Series()
 
 # creating data using np array
 arr_data = np.array([96, 63, 20, 50, 100, 74])
-arr_s = pd.Series(arr_data)
+arr_s = pd.Series(data=arr_data)
 # print(arr_s)  # prints default indexes count with values
 
 # but index values can be changed
-arr_sc = pd.Series(arr_data, index=[1, 2, 3, 4, 5, 6])
+arr_sc = pd.Series(data=arr_data, index=[1, 2, 3, 4, 5, 6])
 # print(arr_sc)
 
 # creating data using dict
 dict_data = {"a": 10, "b": 20, "c": 30, "d": 40, "e": 50}
-dict_s = pd.Series(dict_data)
+dict_s = pd.Series(data=dict_data)
 # print(dict_s)
 dict_sc = pd.Series(dict_data, index=["f", "g", "h", "i", "j"])  # if we change the index values in dict then we get
 # NaN values
 # print(dict_sc)
-dict_sc1 = pd.Series(dict_data, index=["d", "a", "f", "e", "c", "b"])  # if we rearrange the index values in dict
+dict_sc1 = pd.Series(data=dict_data, index=["d", "a", "f", "e", "c", "b"])  # if we rearrange the index values in dict
 # then we get values assigned to it in the rearranged format
 # print(dict_sc1)
 
 # creating data using scalar
 scalar_data = 96
-scalar_s = pd.Series(scalar_data, index=[6, 7, 8, 9, 10])
+scalar_s = pd.Series(data=scalar_data, index=[6, 7, 8, 9, 10])
 # print(scalar_s)
 
 
 #   UPDATING
 upd_data = np.array([12, 45, -6, 0.9, 30, -0.5])
-upd_s = pd.Series(upd_data)
+upd_s = pd.Series(data=upd_data)
 # print(upd_s)
 # print(upd_s[2])
 # print(upd_s[-3:-1])  # -ve indexing starts with 1
@@ -62,6 +62,7 @@ upd_dict_s = pd.Series(upd_dict_data, index=["d", "a", "f", "e", "c", "b"])
 upd_dict_s['f'] = 96
 # print(upd_dict_s["f"])
 # print(upd_dict_s, ["d", "a", "f", "e", "c", "b"])
+# print(upd_dict_s)
 
 
 #    BOOLEAN MASKING
@@ -69,11 +70,13 @@ boolmask = upd_dict_s > 20
 # print(boolmask)  # returns boolean value
 # print(upd_dict_s[upd_dict_s > 30])  # to return the values
 # print(upd_dict_s[upd_dict_s > 30 or upd_dict_s == 10])
-print(upd_dict_s.all(upd_dict_s>30) or upd_dict_s.all(upd_dict_s == 10))
+# print(upd_dict_s.all(upd_dict_s>30) or upd_dict_s.all(upd_dict_s == 10))
 # print(upd_dict_s.values)
 # print(upd_dict_s.index)
-# print(upd_dict_s['b'])
-# print(upd_dict_s['b'] in upd_dict_s)  # bcoz in pandas row operation is done by index
+# print(upd_dict_data['a'])
+# print(upd_dict_s['a'])
+# print(upd_dict_s['d'] in upd_dict_s)  # bcoz in pandas row operation is done by index
+# print(10 in upd_dict_s)
 # print('b' in upd_dict_s)
 
 
