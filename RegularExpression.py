@@ -44,7 +44,7 @@ spli = re.split('\s', str1)
 
 # " Replace - (sub) " : re.sub(pattern, replaced pattern, string)
 str2 = "cricket is my favourite game"
-chan = re.sub("c", "f", str2, 1)  # here count means the number of occurrence of pattern you want to change
+chan = re.sub("i", "f", str2, 1)  # here count means the number of occurrence of pattern you want to change
 # print(chan)
 
 
