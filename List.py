@@ -184,6 +184,15 @@ print(list_2D[2])
 print(list_2D[0][0])
 print(list_2D[1][0])
 print(list_2D[2][0])
+
+x, y, z = list_2D
+print(x, y, z)
+print(x)
+print(y)
+print(z)
+print(type(x))
+print(type(y))
+print(type(z))
 # '''
 
 
@@ -199,7 +208,7 @@ print(fruitss)
 # '''
 
 
-# ''' parsing lines using list
+''' parsing lines using list
 fhand = open('list.txt')
 for line in fhand:
     line = line.rstrip()
