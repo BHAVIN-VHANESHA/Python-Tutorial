@@ -1,3 +1,4 @@
+# Tuples are immutable
 tup = ()
 # print(tup)  # empty tuple
 
